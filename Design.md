@@ -8,7 +8,7 @@ Walk through of [swagger.json](swagger.json).
 
 TBD
 
-## Installing go-swagger tool
+## Swagger & Go
 
 This presumes you already have go installed on your machine and are running the commands in this repository within your go working directory.
 
