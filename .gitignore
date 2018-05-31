@@ -1,0 +1,29 @@
+# Binaries for programs and plugins
+*.exe
+*.exe~
+*.dll
+*.so
+*.dylib
+
+# Test binary, build with `go test -c`
+*.test
+
+# Output of the go coverage tool, specifically when used with LiteIDE
+*.out
+
+# TAQUITO Specific
+
+# dep stuff
+vendor
+_vendor*
+
+# For the local build
+taquito
+
+# For the docker build
+main
+
+# For Swagger Tools
+.swagger-codegen
+.swagger-codegen-ignore
+.python-version
