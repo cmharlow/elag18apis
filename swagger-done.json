@@ -64,6 +64,47 @@
       }
     },
     "/resource/{ID}": {
+      "get": {
+        "summary": "Retrieve TAQUITO Resource Metadata.",
+        "description": "Retrieves the metadata (as JSON-LD) for an existing TAQUITO resource as identified by the TAQUITO identifier.",
+        "security" : [
+          { "RemoteUser": [] }
+        ],
+        "operationId": "retrieveResource",
+        "produces": ["application/json"],
+        "parameters": [
+          {
+            "name": "ID",
+            "in": "path",
+            "description": "TAQUITO Resource Identifier.",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "name": "version",
+            "in": "query",
+            "type": "string",
+            "description": "The version of the requested resource"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Resource metadata retrieved.",
+            "schema": {
+              "$ref": "#/definitions/Resource"
+            }
+          },
+          "401": {
+            "description": "You are not authorized to view this resource in TAQUITO."
+          },
+          "404": {
+            "description": "Resource not found. Please check your provided TAQUITO identifier."
+          },
+          "500": {
+            "description": "The resource could not be retrieved by TAQUITO at this time."
+          }
+        }
+      },
       "patch": {
         "summary": "Update TAQUITO Resource.",
         "description": "Updates the metadata for an existing TAQUITO resource. Only include required fields and fields you wish to change. Will return the TAQUITO resource identifier.",
@@ -109,6 +150,33 @@
           },
           "500": {
             "description": "This resource could be updated at this time by TAQUITO."
+          }
+        }
+      },
+      "delete": {
+        "summary": "Delete a TAQUITO Resource.",
+        "description": "Deletes a TAQUITO resource. Not recursive.",
+        "operationId": "deleteResource",
+        "produces": ["application/json"],
+        "parameters": [{
+          "name": "ID",
+          "in": "path",
+          "description": "TAQUITO Identifier for the Resource.",
+          "required": true,
+          "type": "string"
+        }],
+        "responses": {
+          "204": {
+            "description": "TAQUITO resource metadata delete."
+          },
+          "404": {
+            "description": "Invalid ID supplied"
+          },
+          "401": {
+            "description": "You are not authorized to delete a resource in TAQUITO."
+          },
+          "500": {
+            "description": "This resource could not be deleted at this time by TAQUITO."
           }
         }
       }

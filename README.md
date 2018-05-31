@@ -21,8 +21,8 @@ This bootcamp is a registration-only workshop as part of [ELAG 2018 in Prague](h
 
 Time          | Topic                                           | Link(s)
 ------------- | ----------------------------------------------- | ------------------------------------------
-10-10:30      | Bootcamp Introduction, Logistics, Goals         |
-10:30-11      | Designing our API (ReST, PCDM, Swagger)         |
+10-10:30      | Bootcamp Introduction, Logistics, Goals         | N/A (just follow slides)
+10:30-11      | Designing our API (ReST, PCDM, Swagger)         | [Design.md](https://github.com/cmh2166/elag18apis/blob/master/Design.md)
 *11-11:10*    | *coffee break*                                  |
 11:10-12:30   | Developing our API (Go, Go-Swagger, Localstack) |
 12:30-13:30   | Lunch Break (on your own)                       |
