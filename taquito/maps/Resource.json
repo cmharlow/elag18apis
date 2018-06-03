@@ -1,0 +1,12 @@
+{
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "title": "Resource",
+  "description": "Update / Retrieve Request Domain Resource (Collection, Object, Fileset, or File or any subclass of those) Request Body. For TACO API high-level validation of incoming / outgoing resources.",
+  "type": "object",
+  "oneOf": [
+    {"$ref": "Collection.json"},
+    {"$ref": "DRO.json"},
+    {"$ref": "Fileset.json"},
+    {"$ref": "File.json"}
+  ]
+}
