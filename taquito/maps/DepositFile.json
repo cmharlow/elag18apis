@@ -1,0 +1,181 @@
+{
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "title": "File",
+  "description": "Binaries that are the basis of what our domain manages. Binaries here do not include metadata files generated for the domain's own management purposes.",
+  "type": "object",
+  "required": ["@context", "@type", "label", "administrative", "access", "identification", "structural"],
+  "not": {
+    "anyOf": [
+      { "required": ["tacoIdentifier"] },
+      { "required": ["version"] },
+      { "required": ["externalIdentifier"] }
+    ]
+  },
+  "properties": {
+    "@context": {
+      "description": "URI for the JSON-LD context definitions.",
+      "type": "string",
+      "default": "http://sdr.sul.stanford.edu/contexts/taco-base.jsonld"
+    },
+    "@type": {
+      "description": "The content type of the File.",
+      "type": "string",
+      "default": "http://sdr.sul.stanford.edu/models/sdr3-file.jsonld",
+      "enum": [
+        "http://sdr.sul.stanford.edu/models/sdr3-file.jsonld"
+      ]
+    },
+    "depositor": {
+      "description": "The Agent (User, Group, Application, Department, other) that deposited the File into SDR.",
+      "$ref": "Agent.json"
+    },
+    "externalIdentifier": {
+      "description": "Identifier for the resource within SDR but outside of TACO. UUID. Constant across resource versions. What clients will use calling TACO. Same as `identification.identifier`",
+      "type": "string"
+    },
+    "filename": {
+      "description": "Filename for a file. Can be same as label.",
+      "type": "string"
+    },
+    "format": {
+      "description": "Format of the File.",
+      "type": "string"
+    },
+    "hasMessageDigests": {
+      "description": "The output of the message digest algorithm.",
+      "type": "object"
+    },
+    "hasMimeType": {
+      "description": "MIME Type of the File.",
+      "type": "string"
+    },
+    "label": {
+      "description": "Primary processing label (can be same as title) for a File.",
+      "type": "string"
+    },
+    "presentation": {
+      "description": "Presentation data for the File.",
+      "type": "object"
+    },
+    "size": {
+      "description": "Size of the File (binary) in bytes.",
+      "type": "integer"
+    },
+    "tacoIdentifier": {
+      "description": "Identifier for the resource within TACO. UUID, unique for each new version of a TACO resource.",
+      "type": "string"
+    },
+    "use": {
+      "description": "Use for the File.",
+      "type": "string"
+    },
+    "version": {
+      "description": "Version for the File within SDR.",
+      "type": "integer",
+      "default": 0
+    },
+    "precedingVersion": {
+      "description": "Preceding version for the File within SDR.",
+      "type": "string"
+    },
+    "followingVersion": {
+      "description": "Following version for the File within SDR.",
+      "type": "string"
+    },
+    "access": {
+      "description": "Access Metadata for the File.",
+      "type": "object",
+      "required": ["access", "download"],
+      "properties": {
+        "access": {
+          "description": "Access level for the File.",
+          "type": "string",
+          "enum": ["world", "stanford", "location-based", "citation-only", "dark"],
+          "default": "dark"
+        },
+        "download": {
+          "description": "Download level for the File binary.",
+          "type": "string",
+          "enum": ["world", "stanford", "location-based", "citation-only", "dark"],
+          "default": "dark"
+        }
+      }
+    },
+    "administrative": {
+      "type": "object",
+      "description": "Administrative metadata for the SDR resource.",
+      "required": ["sdrPreserve"],
+      "not": {"required": ["created"]},
+      "properties": {
+        "created": {
+          "description": "When the resource in SDR was created.",
+          "type": "string",
+          "format": "date-time"
+        },
+        "deleted": {
+          "description": "If the resource has been deleted (but not purged).",
+          "type": "boolean",
+          "default": false
+        },
+        "gravestoneMessage": {
+          "description": "Message describing why the resource was deleted.",
+          "type": "string"
+        },
+        "lastUpdated": {
+          "description": "When the resource in SDR was last updated.",
+          "type": "string",
+          "format": "date-time"
+        },
+        "partOfProject": {
+          "description": "Administrative or Internal project this resource is a part of.",
+          "type": "string"
+        },
+        "sdrPreserve": {
+          "description": "If this resource should be sent to Preservation.",
+          "type": "boolean",
+          "default": false
+        },
+        "remediatedBy": {
+          "description": "The Agent (User, Group, Application, Department, other) that remediated this File in SDR.",
+          "type": "array",
+          "items": {
+            "$ref": "Agent.json"
+          }
+        }
+      }
+    },
+    "identification": {
+      "description": "Identifying information for the File.",
+      "type": "object",
+      "not": {"required": ["identifier"]},
+      "properties": {
+        "filename": {
+          "description": "Filename for the File from originating systems.",
+          "type": "string"
+        },
+        "identifier": {
+          "description": "Identifier for the File within the Stanford Digital Repository system",
+          "type": "string"
+        },
+        "sdrUUID": {
+          "type": "string",
+          "description": "UUID previously minted for the resource within SDR2 / Fedora 3."
+        }
+      }
+    },
+    "structural": {
+      "description": "Structural metadata for the File.",
+      "type": "object",
+      "properties": {
+        "isContainedBy": {
+          "description": "Fileset that contains this File.",
+          "type": "string"
+        },
+        "isTargetOf": {
+          "description": "An Annotation instance that applies to this File.",
+          "type": ["string", "null"]
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,37 @@
+{
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "title": "Resource Sequence",
+  "description": "A sequence or ordering of resources within a Collection or Object.",
+  "type": "object",
+  "required": ["@type", "label", "startMember", "members"],
+  "properties": {
+    "@context": {
+      "description": "URI for the JSON-LD context definitions.",
+      "type": "string"
+    },
+    "@type": {
+      "description": "The type of Sequence.",
+      "type": "string",
+      "enum": ["http://sdr.sul.stanford.edu/models/sdr3-sequence.jsonld",
+        "http://sdr.sul.stanford.edu/models/sdr3-primary-sequence.jsonld"
+      ]
+    },
+    "label": {
+      "description": "Label for the sequence or ordering.",
+      "type": "string"
+    },
+    "startMember": {
+      "description": "Identifier for the first member of the sequence.",
+      "type": "string"
+    },
+    "members": {
+      "description": "Identifiers for Members in their stated Order for the Sequence.",
+      "type": "array",
+      "items": [
+        {
+          "type": "string"
+        }
+      ]
+    }
+  }
+}
