@@ -39,6 +39,8 @@ This presumes you [already have `go` installed on your machine](https://github.c
 
 ### Install Go-Swagger
 
+https://github.com/go-swagger/go-swagger/blob/master/docs/install.md <= has link to binary retrieval for installing swagger.
+
 We want to validate and eventually generate some code based off of `swagger.json` using the `go-swagger` library. You'll need to install the `go-swagger` library before running these commands (commands for those using Mac OSX):
 
 ```shell
