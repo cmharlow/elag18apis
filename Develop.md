@@ -3,16 +3,35 @@
 ## Bootcamp steps
 
 1. Group: Go refresher (overview / pros / cons / setup)
-3. Group: Go dependencies (overview / pros / cons / setup)
-2. Individual / Pairs: Check your Go Environment, that this repository is within it, & add dependencies
-6. Group: `Go-Swagger` review (overview / usage)
-7. Individual / Pairs: Install go-swagger, validate your Swagger spec, check out the generated docs, then generate your swagger code.
-6. Group: `Go-Swagger` generated server code review
-6. Group: Write our stub Deposit handler
-7. Group: Run our stub Deposit handler
-7. Individual / Pairs: Test run your TAQUITO server and cURL against our stub Deposit route.
-6. Group: LocalStack, AWSCLI, Go AWS SDK, and DynamoDB refresher
-7. Individual / Pairs: Spin up LocalStack with DynamoDB created
+2. SimpleDev Work
+    3. Group: Go dependencies (overview / pros / cons / setup)
+    2. Individual / Pairs: Check your Go Environment, that this repository is within it, & add dependencies
+    6. Group: `Go-Swagger` review (overview / usage)
+    6. Group: `Go-Swagger` generated server code review
+    7. Individual / Pairs: Install go-swagger, validate your Swagger spec, check out the generated docs, then generate your swagger code.
+    6. Group: Review our stub handler.
+    7. Group: Review how to run our code locally.
+    7. Individual / Pairs: Test run your SimpleDev server and cURL against our stub Deposit route.
+6. TAQUITO Work
+    7. Group: Review Localstack (how to run, why, interacting with DynamoDB there)
+    7. Individual / Pairs: Run localstack and make your DynamoDB resources.
+    8. Group: Review TAQUITO main.go / server.go
+    7. Group: Review TAQUITO full Handlers.
+    7. Group: Review TAQUITO internal services.
+    7. Group: Review TAQUITO validators & dataUtils / hard data problems.
+    7. Individual / Pairs: Spin up LocalStack with DynamoDB created
+ 7. Group: Some notes on TACO development parts missing in this session.
+
+## Installing Dep
+
+On a Mac / OSX, use homebrew:
+
+```bash
+$ brew install dep
+$ brew upgrade dep
+```
+
+For other installs, follow the instructions here (cURL a shell script & run it, basically): https://github.com/golang/dep#installation
 
 ## Swagger & Go
 

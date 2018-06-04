@@ -104,54 +104,6 @@
             "description": "The resource could not be retrieved by TAQUITO at this time."
           }
         }
-      },
-      "patch": {
-        "summary": "Update TAQUITO Resource.",
-        "description": "Updates the metadata for an existing TAQUITO resource. Only include required fields and fields you wish to change. Will return the TAQUITO resource identifier.",
-        "operationId": "updateResource",
-        "consumes": ["application/json", "application/json+ld"],
-        "produces": ["application/json"],
-        "parameters": [{
-          "name": "ID",
-          "in": "path",
-          "description": "TAQUITO Identifier for the Resource.",
-          "required": true,
-          "type": "string"
-        }, {
-          "in": "body",
-          "name": "payload",
-          "description": "JSON-LD Representation of the resource metadata only required fields and fields you wish to change (identified via its TAQUITO identifier).",
-          "required": true,
-          "schema": {
-            "$ref": "#/definitions/Resource"
-          }
-        }],
-        "responses": {
-          "200": {
-            "description": "TAQUITO resource metadata updated.",
-            "schema": {
-              "$ref": "#/definitions/ResourceResponse"
-            }
-          },
-          "401": {
-            "description": "You are not authorized to update a resource in TAQUITO."
-          },
-          "404": {
-            "description": "Invalid ID supplied"
-          },
-          "415": {
-            "description": "Unsupported resource type provided. TAQUITO resources should be handed over as JSON or JSON-LD."
-          },
-          "422": {
-            "description": "The resource JSON provided had an unspecified or unsupported field, or is otherwise unprocessable by TAQUITO.",
-            "schema": {
-              "$ref": "#/definitions/ErrorResponse"
-            }
-          },
-          "500": {
-            "description": "This resource could be updated at this time by TAQUITO."
-          }
-        }
       }
     },
     "/healthcheck": {
