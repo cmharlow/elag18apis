@@ -1,39 +1,36 @@
 {
-    "containerDefinitions": [
-        {
-            "name": "taquito",
-            "image": "cmh2166/taquito:REPLACE_TAG",
-            "essential": true,
-            "portMappings": [
-                {
-                    "containerPort": 8080,
-                    "hostPort": 8080
-                }
-            ],
-            "environment": [
-                {
-                    "name": "AWS_REGION",
-                    "value": "REPLACE_REGION"
-                },
-                {
-                    "name": "AWS_DISABLE_SSL",
-                    "value": "false"
-                },
-                {
-                    "name": "DYNAMO_DB_ENDPOINT",
-                    "value": "dynamodb.REPLACE_REGION.amazonaws.com"
-                },
-                {
-                    "name": "RESOURCE_TABLE_NAME",
-                    "value": "resources-REPLACE_ENVIRONMENT"
-                }
-            ]
-        }
-    ],
-    "cpu": "256",
-    "memory": "0.5GB",
-    "networkMode": "awsvpc",
-    "family": "taquito",
-    "executionRoleArn": "arn:aws:iam::REPLACE_ACCOUNT_ID:role/REPLACE_ENVIRONMENT-ecs-task-execution-role",
-    "taskRoleArn": "arn:aws:iam::REPLACE_ACCOUNT_ID:role/taco-REPLACE_ENVIRONMENT-ecs-task-role"
+  "containerDefinitions": [
+    {
+      "name": "taquito",
+      "image": "cmharlow/taquito:latest",
+      "cpu": 256,
+      "portMappings": [
+          {
+              "containerPort": 8080,
+              "hostPort": 80
+          }
+      ],
+      "environment": [
+          {
+              "name": "AWS_REGION",
+              "value": "us-west-2"
+          },
+          {
+              "name": "AWS_DISABLE_SSL",
+              "value": "false"
+          },
+          {
+              "name": "DYNAMO_DB_ENDPOINT",
+              "value": "dynamodb.us-west-2.amazonaws.com"
+          },
+          {
+              "name": "RESOURCE_TABLE_NAME",
+              "value": "resources"
+          }
+      ],
+      "memory": 512,
+      "essential": true
+    }
+  ],
+  "family": "taquito"
 }
