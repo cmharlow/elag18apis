@@ -7,7 +7,7 @@ Welcome to the open repository, documentation and materials for the ELAG 2018 Li
 * When: Monday, June 4th, 2018, 10:00 - 16:00
 * Where: [**National Library of Technology**](https://www.elag2018.org/how-to-access-ntk/)
 * Workshop Materials: [github.com/cmh2166/elag18apis](https://github.com/cmh2166/elag18apis)
-* Workshop Slides: to be linked / stored in this repo
+* Workshop Slides: [in Google Drive](https://docs.google.com/presentation/d/1poBSkmk6keseqoygDEgbzgsbCqTxUxTHYe4VrYMrPAA/edit?usp=sharing)
 
 ## About the Bootcamp
 
