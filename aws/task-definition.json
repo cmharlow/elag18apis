@@ -1,0 +1,36 @@
+{
+  "containerDefinitions": [
+    {
+      "name": "taquito",
+      "image": "cmharlow/taquito:latest",
+      "cpu": 256,
+      "portMappings": [
+          {
+              "containerPort": 8080,
+              "hostPort": 80
+          }
+      ],
+      "environment": [
+          {
+              "name": "AWS_REGION",
+              "value": "us-west-2"
+          },
+          {
+              "name": "AWS_DISABLE_SSL",
+              "value": "false"
+          },
+          {
+              "name": "DYNAMO_DB_ENDPOINT",
+              "value": "dynamodb.us-west-2.amazonaws.com"
+          },
+          {
+              "name": "RESOURCE_TABLE_NAME",
+              "value": "resources"
+          }
+      ],
+      "memory": 512,
+      "essential": true
+    }
+  ],
+  "family": "taquito"
+}
