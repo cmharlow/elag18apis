@@ -7,7 +7,7 @@ Welcome to the open repository, documentation and materials for the Samvera Conn
 * When: Monday, June 4th, 2018, 10:00 - 16:00
 * Where: [**J. Willard Marriott Library, University of Utah**](https://www.lib.utah.edu/info/directions.php)
 * Workshop Materials: [github.com/PenguinParadigm/samvera18apis](https://github.com/PenguinParadigm/samvera18apis)
-* Workshop Slides: [in Google Drive](https://docs.google.com/presentation/d/1poBSkmk6keseqoygDEgbzgsbCqTxUxTHYe4VrYMrPAA/edit?usp=sharing)
+* Workshop Slides: [in Google Drive](https://docs.google.com/presentation/d/1wi5AlRt-r79xH-rQ1j6PbFTNz6bgqPVrznWt6HuNwYg/edit?usp=sharing)
 
 ## About the Bootcamp
 
