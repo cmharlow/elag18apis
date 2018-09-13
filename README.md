@@ -1,12 +1,12 @@
-# ELAG 2018 Library Data APIs Bootcamp
+# Samvera Connect 2018 Library Data APIs Bootcamp
 
 [![Join the chat at https://gitter.im/elag18apis/Lobby](https://badges.gitter.im/elag18apis/Lobby.svg)](https://gitter.im/elag18apis/Lobby?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 
-Welcome to the open repository, documentation and materials for the ELAG 2018 Library Data APIs Bootcamp!
+Welcome to the open repository, documentation and materials for the Samvera Connect 2018 Library Data APIs Bootcamp!
 
 * When: Monday, June 4th, 2018, 10:00 - 16:00
 * Where: [**National Library of Technology**](https://www.elag2018.org/how-to-access-ntk/)
-* Workshop Materials: [github.com/cmh2166/elag18apis](https://github.com/cmh2166/elag18apis)
+* Workshop Materials: [github.com/PenguinParadigm/samvera18apis](https://github.com/PenguinParadigm/samvera18apis)
 * Workshop Slides: [in Google Drive](https://docs.google.com/presentation/d/1poBSkmk6keseqoygDEgbzgsbCqTxUxTHYe4VrYMrPAA/edit?usp=sharing)
 
 ## About the Bootcamp
@@ -15,14 +15,14 @@ A growing number of people are seeing the need to evolve library data systems to
 
 [*free space where you can throw in any other buzzwords you'd like to see. Plus another reminder that we won't be doing a deep dive of each topic, but an accelerated walk through of an existing project and process from some recent work.*]
 
-This bootcamp is a registration-only workshop as part of [ELAG 2018 in Prague](https://www.elag2018.org/). If you have questions about the workshop specifically, you can [contact the workshop leaders using the information below](#contact-before-during-after-the-bootcamp).
+This bootcamp is a registration-only workshop as part of [Samvera Connect 2018](https://connect2018.lib.utah.edu/). If you have questions about the workshop specifically, you can [contact the workshop leaders using the information below](#contact-before-during-after-the-bootcamp).
 
 ## Bootcamp Schedule
 
 Time          | Topic                                           | Link(s)
 ------------- | ----------------------------------------------- | ------------------------------------------
 10-10:30      | Bootcamp Introduction, Logistics, Goals         | N/A (just follow slides)
-10:30-11      | Designing our API (ReST, PCDM, Swagger)         | [Design.md](https://github.com/cmh2166/elag18apis/blob/master/Design.md)
+10:30-11      | Designing our API (ReST, PCDM, Swagger)         | [Design.md](https://github.com/PenguinParadigm/samvera18apis/blob/master/Design.md)
 *11-11:10*    | *coffee break*                                  |
 11:10-12:30   | Developing our API (Go, Go-Swagger, Localstack) |
 12:30-13:30   | Lunch Break (on your own)                       |
@@ -43,7 +43,7 @@ We also ask that you come willing to take part and help out where you may have e
 
 We request that all participants bring a laptop with internet connection & modern web browser. On that laptop, please already have:
 
-- our [workshop GitHub repository](https://github.com/cmh2166/elag18apis) on your computer (with mechanism to update / pull down latest changes on Monday morning).
+- our [workshop GitHub repository](https://github.com/PenguinParadigm/samvera18apis) on your computer (with mechanism to update / pull down latest changes on Monday morning).
 - installed the latest, stable version (18.03.1-ce) of [Docker Community Edition](https://www.docker.com/community-edition);
 - installed latest, stable version (1.10.2) of [Go](https://golang.org/doc/install#install) & [set up your Go workspace](https://github.com/sul-dlss-labs/taco#go-local-development-setup).
 - set up a [free AWS account](https://aws.amazon.com/free/) & [awscli](https://docs.aws.amazon.com/cli/latest/userguide/installing.html) connected to that free account.
@@ -56,7 +56,7 @@ If you have any issues with the above, please contact us ASAP using the [communi
 ## Contact Before, During, After the Bootcamp
 
 If you have questions or concerns leading up to or after the bootcamp, please user our Gitter channel to ask or open an issue on this GitHub repository, particularly with any questions dealing with workshop preparation or any installation issues. This allows multiple workshop leaders to respond as able, and other participants can also learn.
-- Open an issue [here](https://github.com/cmh2166/elag18apis/issues);
+- Open an issue [here](https://github.com/PenguinParadigm/samvera18apis/issues);
 - Join our Gitter channel for chatting [here](https://gitter.im/elag18apis/Lobby?utm_source=share-link&utm_medium=link&utm_campaign=share-link).
 
 Both require that you login or create a free account with GitHub.
