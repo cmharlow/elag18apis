@@ -1,6 +1,6 @@
 # Samvera Connect 2018 Library Data APIs Bootcamp
 
-[![Join the chat at https://gitter.im/elag18apis/Lobby](https://badges.gitter.im/elag18apis/Lobby.svg)](https://gitter.im/elag18apis/Lobby?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+[![Join the chat at https://gitter.im/samvera18apis/Lobby](https://badges.gitter.im/samvera18apis/Lobby.svg)](https://gitter.im/samvera18apis/Lobby?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 
 Welcome to the open repository, documentation and materials for the Samvera Connect 2018 Library Data APIs Bootcamp!
 
@@ -57,7 +57,7 @@ If you have any issues with the above, please contact us ASAP using the [communi
 
 If you have questions or concerns leading up to or after the bootcamp, please user our Gitter channel to ask or open an issue on this GitHub repository, particularly with any questions dealing with workshop preparation or any installation issues. This allows multiple workshop leaders to respond as able, and other participants can also learn.
 - Open an issue [here](https://github.com/PenguinParadigm/samvera18apis/issues);
-- Join our Gitter channel for chatting [here](https://gitter.im/elag18apis/Lobby?utm_source=share-link&utm_medium=link&utm_campaign=share-link).
+- Join our Gitter channel for chatting [here](https://gitter.im/samvera18apis/Lobby?utm_source=share-link&utm_medium=link&utm_campaign=share-link).
 
 Both require that you login or create a free account with GitHub.
 
