@@ -1,10 +1,8 @@
 # Samvera Connect 2018 Library Data APIs Bootcamp
 
-[![Join the chat at https://gitter.im/samvera18apis/Lobby](https://badges.gitter.im/samvera18apis/Lobby.svg)](https://gitter.im/samvera18apis/Lobby?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
-
 Welcome to the open repository, documentation and materials for the Samvera Connect 2018 Library Data APIs Bootcamp!
 
-* When: Monday, June 4th, 2018, 10:00 - 16:00
+* When: Tuesday, Otcober 9th, 2018, 9:00 - 17:00
 * Where: [**J. Willard Marriott Library, University of Utah**](https://www.lib.utah.edu/info/directions.php)
 * Workshop Materials: [github.com/PenguinParadigm/samvera18apis](https://github.com/PenguinParadigm/samvera18apis)
 * Workshop Slides: [in Google Drive](https://docs.google.com/presentation/d/1wi5AlRt-r79xH-rQ1j6PbFTNz6bgqPVrznWt6HuNwYg/edit?usp=sharing)
@@ -21,15 +19,15 @@ This bootcamp is a registration-only workshop as part of [Samvera Connect 2018](
 
 Time          | Topic                                           | Link(s)
 ------------- | ----------------------------------------------- | ------------------------------------------
-10-10:30      | Bootcamp Introduction, Logistics, Goals         | N/A (just follow slides)
-10:30-11      | Designing our API (ReST, PCDM, Swagger)         | [Design.md](https://github.com/PenguinParadigm/samvera18apis/blob/master/Design.md)
-*11-11:10*    | *coffee break*                                  |
-11:10-12:30   | Developing our API (Go, Go-Swagger, Localstack) |
-12:30-13:30   | Lunch Break (on your own)                       |
-13:30-14:20   | Deploying our API (Docker)                      |
-*14:20-14:30* | *coffee break*                                  |
-14:30-15:30   | Deploying our API (AWS)                         |
-15:30-16      | Conclusion & Bootcamp Retrospective             |
+9-9:30        | Bootcamp Introduction, Logistics, Goals         | 
+9:30-10:15    | Designing our API (ReST, PCDM, Swagger)         | 
+*10:15-10:30* | *coffee break*                                  |
+10:30-12      | Developing our API (Go, Go-Swagger, Localstack) |
+12-14:00      | Lunch Break (on your own)                       |
+14:00-14:45   | Deploying our API (Docker)                      |
+*14:45-15*    | *coffee break*                                  |
+15-16:30      | Deploying our API (AWS)                         |
+16:30-17      | Conclusion & Bootcamp Retrospective             |
 
 ## Our Expectations of You
 
@@ -47,7 +45,7 @@ We request that all participants bring a laptop with internet connection & moder
 - installed the latest, stable version (18.06.1-ce) of [Docker Community Edition](https://www.docker.com/community-edition);
 - installed latest, stable version (1.11) of [Go](https://golang.org/doc/install#install) & [set up your Go workspace](https://github.com/sul-dlss-labs/taco#go-local-development-setup).
 - set up a [free AWS account](https://aws.amazon.com/free/) & [awscli](https://docs.aws.amazon.com/cli/latest/userguide/installing.html) connected to that free account.
-- installed [localstack](https://github.com/localstack/localstack#installing) (this requires python, sorry) for use in your Go workspace.
+- pulled down & can run [this localstack docker image](https://hub.docker.com/r/localstack/localstack/) for use in your Go workspace.
 
 **If you're short on time or other needs, you need at least Go, localstack, and docker for following along with local development.** We will use our lunch break to help folks catch up or debug these installation requirements as we are able, though the morning requires Go be set up.
 
@@ -57,8 +55,6 @@ If you have any issues with the above, please contact us ASAP using the [communi
 
 If you have questions or concerns leading up to or after the bootcamp, please user our Gitter channel to ask or open an issue on this GitHub repository, particularly with any questions dealing with workshop preparation or any installation issues. This allows multiple workshop leaders to respond as able, and other participants can also learn.
 - Open an issue [here](https://github.com/PenguinParadigm/samvera18apis/issues);
-- Join our Gitter channel for chatting [here](https://gitter.im/samvera18apis/Lobby?utm_source=share-link&utm_medium=link&utm_campaign=share-link).
-
-Both require that you login or create a free account with GitHub.
+- Join our #taco-workshop Samvera Slack channel.
 
 During the workshop, we will indicate the best ways to get help or communicate a question/comment - however, this bootcamp is intended to be informal, so feel free to speak up or indicate you have a question at any time.
